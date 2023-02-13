@@ -12,14 +12,7 @@ public class Person {
         }
     
         boolean likelyToAttend() {
-            if (this.schoolYear > 12 || this.schoolYear < 9) {
-                return false;
-            }
-            if (this.mpw < 1.0) {
-                return false;
-            }
-            return true;
-        }
+            return !(this.schoolYear > 12 || this.schoolYear < 9 || this.mpw < 1.0) {
         public static void main(String[] args) {
             Person joseph = new Person("Joseph", 10, 0.5);
             Person zhiming = new Person("zhiming", 21, 9.9);
